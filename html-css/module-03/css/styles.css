@@ -8,6 +8,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-family: 'Playfair Display', serif;
+}
+
 img {
   display: block;
   width: 100%;
@@ -17,4 +21,35 @@ img {
 .container {
   width: 900px;
   margin: 0 auto;
+}
+
+.header-nav {
+  padding: 72px 0 98px 0;
+}
+
+.header-menu {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.header-menu__item {
+  display: inline-block;
+  list-style: none;
+}
+
+.header-menu__item:not(:last-child) {
+  margin-right: 95px;
+}
+
+.header-menu__link {
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header-menu__link:hover {
+  color: #03a9f4;
 }
