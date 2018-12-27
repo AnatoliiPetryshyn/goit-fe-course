@@ -8,6 +8,20 @@ html {
   box-sizing: inherit;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #555252;
+  padding: 0;
+  margin: 0;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -17,4 +31,60 @@ img {
 .container {
   width: 1110px;
   margin: 0 auto;
+}
+
+/* header */
+
+.header-nav {
+  padding: 37px 0 82px 0;
+}
+
+.header-logo {
+  display: inline-block;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #555252;
+}
+
+.header-logo__link {
+  text-decoration: none;
+}
+
+.header-logo__first-letter {
+  font-weight: 900;
+  color: #1abc9c;
+}
+
+.header-menu {
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+.header-menu__item {
+  list-style: none;
+  float: left;
+}
+
+.header-menu__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.header-menu__link {
+  font-weight: 700;
+  line-height: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  color: #0f0101;
+}
+
+.header-menu__link:hover,
+.header-menu__link:focus {
+  color: #1abc9c;
 }
