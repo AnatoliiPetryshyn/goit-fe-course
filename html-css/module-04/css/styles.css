@@ -88,3 +88,25 @@ img {
 .header-menu__link:focus {
   color: #1abc9c;
 }
+
+/* products */
+.products__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  line-height: 32px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #515151;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 92px 0;
+}
+
+.products__title::after {
+  content: "";
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+  margin: 32px auto 0;
+}
