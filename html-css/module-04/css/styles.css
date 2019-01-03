@@ -9,8 +9,8 @@ html {
 }
 
 .clearfix::after {
-  content: "";
   display: table;
+  content: "";
   clear: both;
 }
 
@@ -48,11 +48,22 @@ img {
   line-height: 32px;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #555252;
 }
 
 .header-logo__link {
   text-decoration: none;
+}
+
+.header-logo__link:link {
+  color: #555252;
+}
+
+.header-logo__link:visited {
+  color: #555252;
+}
+
+.header-logo__link:active {
+  color: #555252;
 }
 
 .header-logo__first-letter {
@@ -90,6 +101,9 @@ img {
 }
 
 /* products */
+.products {
+  margin-bottom: 105px;
+}
 .products__title {
   font-family: "Roboto", sans-serif;
   font-size: 48px;
@@ -120,6 +134,8 @@ img {
   float: left;
   list-style: none;
   background-color: #e9f0fd;
+  width: 255px;
+  cursor: pointer;
 }
 
 .products__list-item:hover .products__article-title {
@@ -143,7 +159,6 @@ img {
 }
 
 .products__article-img {
-  width: 255px;
   height: 284px;
   padding-top: 14px;
 }
@@ -177,4 +192,82 @@ img {
   color: #fff;
   background-color: #8c8c8c;
   text-transform: uppercase;
+}
+
+/* news */
+.news__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  line-height: 32px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #515151;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 80px 0;
+}
+
+.news__title::after {
+  content: "";
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+  margin: 32px auto 0;
+}
+
+.news__list {
+  padding: 0;
+  margin: 0;
+}
+
+.news__item {
+  float: left;
+  width: 350px;
+  list-style: none;
+}
+
+.news__item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.news__img {
+  margin-bottom: 10px;
+}
+
+.news-article__title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  margin: 0 0 24px 0;
+}
+
+.news-article__title::after {
+  display: block;
+  content: "";
+  width: 136px;
+  height: 3px;
+  background-color: #4ec6ab;
+  margin-top: 10px;
+}
+
+.news-article__description {
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  margin: 0 0 14px 0;
+}
+
+.news-article__button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  padding: 16px 40px;
+  color: #fff;
+  background-color: #4ec6ab;
+  text-decoration: none;
+  border-radius: 3px;
+  margin: 0 0 80px 0;
 }
