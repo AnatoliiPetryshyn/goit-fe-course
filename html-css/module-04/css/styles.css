@@ -169,16 +169,15 @@ img {
 
 .products__article-title {
   float: left;
-  width: 201px;
   height: 40px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 900;
   line-height: 40px;
   letter-spacing: -0.02em;
+  padding: 0 0 0 14px;
   margin: 0;
   color: #fff;
-  text-align: center;
   text-transform: uppercase;
 }
 
