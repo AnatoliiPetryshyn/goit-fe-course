@@ -133,13 +133,11 @@ img {
 .products__list-item {
   float: left;
   width: 255px;
-  height: 321px;
   list-style: none;
   background-color: #e9f0fd;
-  cursor: pointer;
 }
 
-.products__list-item:hover .products__article-title {
+.products__list-item:hover .products__article-description {
   background-color: #1abc9c;
 }
 
@@ -196,8 +194,14 @@ img {
   padding: 96px 0 0 0;
 }
 
+.products__article-description {
+  display: block;
+  background-color: #323232;
+}
+
 .products__article-title {
-  width: 100%;
+  float: left;
+  width: 201px;
   height: 40px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -205,7 +209,6 @@ img {
   line-height: 40px;
   letter-spacing: -0.02em;
   margin: 0;
-  background-color: #323232;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
@@ -213,6 +216,7 @@ img {
 
 .products__article-price {
   float: right;
+  width: 54px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 900;
