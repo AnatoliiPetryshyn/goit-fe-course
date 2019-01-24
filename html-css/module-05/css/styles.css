@@ -161,7 +161,7 @@ img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding: 30px 42px;
+  padding: 30px 30px;
   border: none;
   background: var(--arrow-color);
   outline: none;
@@ -178,7 +178,7 @@ img {
 
 .icon-chevron-thin-right,
 .icon-chevron-thin-left {
-  width: 21px;
+  width: 40px;
   height: 40px;
   fill: var(--light-color);
 }
