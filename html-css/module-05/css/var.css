@@ -1,0 +1,13 @@
+:root {
+  --main-font: "Open Sans", sans-serif;
+  --semi-font: "Roboto", sans-serif;
+  --logo-color: #555252;
+  --nav-color: #0f0101;
+  --active-bg-color: #1abc9c;
+  --arrow-color: rgba(78,198,171,.65);
+  --light-color: #ffffff;
+  --section-bg-color: #e9f0fd;
+  --price-bg-color: rgba(255,255,255,.44);
+  --overlay-color: rgba(0,0,2,.55);
+  --title-color: #515151;
+}
