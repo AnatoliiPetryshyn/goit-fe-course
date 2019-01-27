@@ -1,0 +1,11 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --second-font: "Montserrat", sans-serif;
+  --accent-title: "Kaushan Script", cursive;
+  --main-color: #95e1d3;
+  --accent-color: #f38181;
+  --title-color: #333333;
+  --text-color: #999999;
+  --icon-bg-color: #fce38a;
+  --overlay-gradient: linear-gradient(to top, rgba(251, 226, 135,.9), rgba(243, 129, 129,.9));
+}
