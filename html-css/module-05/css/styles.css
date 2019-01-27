@@ -111,25 +111,27 @@ img {
 
 .slider {
   width: 100%;
-  height: 602px;
-  background-image: linear-gradient(to right, var(--overlay-color), var(--overlay-color)), url(../img/slide4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
-
-.slide-info {
+.slide__wrapper {
   position: relative;
   top: 0;
   left: 0;
-  height: 602px;
+}
 
+.slide-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--overlay-color);
 }
 
 .slide-description {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%,-50%);
   padding: 0 0 0 184px;
 }
 
@@ -224,7 +226,7 @@ img {
   list-style: none;
 }
 
-.category-list__item:hover .category-overlay {
+.category-list__item:hover .overlay__wrap {
   display: block;
 }
 
@@ -243,14 +245,18 @@ img {
   left: 0;
 }
 
-.category-overlay {
+.overlay__wrap {
   display: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border: 10px solid var(--light-color);
+  border: 10px solid rgba(255,255,255,.55);
+}
+.category-overlay {
+  width: 100%;
+  height: 100%;
   background: var(--overlay-color);
 }
 
@@ -263,9 +269,9 @@ img {
 }
 
 .category-btn {
+  display: inline-block;
   float: left;
-  width: 50px;
-  height: 50px;
+  padding: 11.5px;
   background: transparent;
   outline: none;
   border: 1px solid var(--light-color);
@@ -286,8 +292,8 @@ img {
 }
 
 .cart {
-  display: inline-block;
   width: 100%;
+  padding: 0;
   line-height: 50px;
   letter-spacing: -0.02em;
   color: var(--light-color);
@@ -306,6 +312,7 @@ img {
 }
 
 .category-description {
+  display: block;
   height: 40px;
   background-color: #323232;
 }
@@ -340,17 +347,23 @@ img {
 }
 
 .footer {
-  height: 88px;
   text-align: center;
   background-color: #323232;
+  padding: 30px 0;
 }
 
 .copy {
-  line-height: 88px;
+  font-size: 16px;
+  line-height: 28px;
   margin: 0;
   color: var(--light-color);
 }
 
 .author {
+  text-decoration: none;
   color: var(--active-bg-color);
+}
+
+.author:hover {
+  text-decoration: underline;
 }
