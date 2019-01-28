@@ -94,6 +94,33 @@ body {
   display: block;
 } 
 
+/* service */
+.section__pretitle {
+  font-family: var(--pretitle-font);
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  color: var(--title-color);
+  text-align: center;
+}
+
+.section__title {
+  font-family: var(--second-font);
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.section__title::after {
+  display: block;
+  content: "";
+  width: 60px;
+  border-bottom: 3px solid var(--accent-color);
+  margin: 40px auto 0;
+}
+
 
 
 
