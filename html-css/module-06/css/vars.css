@@ -8,4 +8,5 @@
   --text-color: #999999;
   --icon-bg-color: #fce38a;
   --overlay-gradient: linear-gradient(to top, rgba(251, 226, 135,.9), rgba(243, 129, 129,.9));
+  --hover-transition: all .2s linear;
 }

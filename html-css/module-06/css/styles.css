@@ -210,6 +210,120 @@ body {
 }
 
 
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.team-list__item {
+  list-style: none;
+  cursor: pointer;
+}
+
+.team-list__item:hover .team-img {
+  transform: translate(-10px,-10px);
+  transition: var(--hover-transition);
+}
+
+.team-list__item:hover .team-img__overlay {
+  display: block;
+}
+
+.team-img__wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0 0 30px 0;
+  background-color: var(--main-color);
+}
+
+.team-img__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.social-list {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: var(--overlay-gradient);
+  justify-content: center;
+  align-items: center;
+}
+
+.social-list__item {
+  list-style: none;
+}
+
+.social-list__item:not(:last-child) {
+  margin: 0 1px 0 0;
+}
+
+.social-list__link {
+  display: block;
+  padding: 14px;
+  background-color: var(--icon-bg-color);
+  outline: none; 
+  transition: var(--hover-transition); 
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+  background-color: var(--main-color);
+}
+
+
+.social-list__link::after {
+  display: block;
+  width: 26px;
+  height: 26px;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-list__item:nth-child(1) .social-list__link::after {
+  background-image: url(../img/icons/facebook.png);
+}
+
+.social-list__item:nth-child(2) .social-list__link::after {
+  background-image: url(../img/icons/twitter.png);
+}
+
+.social-list__item:nth-child(3) .social-list__link::after {
+  background-image: url(../img/icons/pinterest.png);
+}
+
+.social-list__item:nth-child(4) .social-list__link::after {
+  background-image: url(../img/icons/instagram.png);
+}
+
+.team__name {
+  font-family: var(--second-font);
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  color: var(--title-color);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.team__position {
+  font-weight: 300;
+  font-style: italic;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+}
+
 
 
 
