@@ -72,6 +72,7 @@ body {
   text-decoration: none;
   transition: all .2s linear;
   position: relative;
+  outline: none;
 }
 
 .nav-list__link::after {
@@ -86,11 +87,13 @@ body {
   margin-top: 12px;
 }
 
-.nav-list__link:hover {
+.nav-list__link:hover,
+.nav-list__link:focus {
   color: var(--accent-color);
 }
 
-.nav-list__link:hover::after {
+.nav-list__link:hover::after,
+.nav-list__link:focus::after {
   display: block;
 } 
 
@@ -340,12 +343,14 @@ body {
 
 .author {
   text-decoration: none;
+  outline: none;
   color: var(--accent-color);
 }
 
 .author:hover,
 .author:focus {
   color: var(--main-color);
+  text-decoration: underline;
 }
 
 .footer__form {
@@ -356,7 +361,9 @@ body {
   flex: 0 1 230px;
   padding: 10px 12px;
   border: 1px solid var(--form-border-color);
-  border-right: transparent;
+  border-right: none;
+  color: var(--text-color);
+  outline: none;
   margin: 0;
 }
 
