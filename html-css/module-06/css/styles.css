@@ -192,6 +192,23 @@ body {
   margin: 0;
 }
 
+/* team */
+.team {
+  padding: 90px 0 82px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.section__description {
+  width: 980px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 auto 90px;
+}
+
+.team__title {
+  margin: 0 0 42px 0;
+}
+
 
 
 
