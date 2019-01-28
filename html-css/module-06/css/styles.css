@@ -28,6 +28,72 @@ body {
   color: var(--text-color);
 }
 
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 28px 0 130px 0;
+}
+
+.header-logo__link {
+  text-decoration: none;
+}
+
+.header-logo {
+  font-family: var(--second-font);
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--main-color);
+}
+
+.nav-list {
+  display: flex;
+  padding: 0;
+  margin: 0 0 3px 0;
+}
+
+.nav-list__item {
+  list-style: none;
+}
+
+.nav-list__item:not(:last-child) {
+  margin-right: 58px;
+}
+
+.nav-list__link {
+  display: block;
+  font-family: var(--second-font);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--main-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all .2s linear;
+  position: relative;
+}
+
+.nav-list__link::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: var(--accent-color);
+  margin-top: 12px;
+}
+
+.nav-list__link:hover {
+  color: var(--accent-color);
+}
+
+.nav-list__link:hover::after {
+  display: block;
+} 
+
 
 
 
