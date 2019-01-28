@@ -345,6 +345,7 @@ body {
   text-decoration: none;
   outline: none;
   color: var(--accent-color);
+  transition: var(--hover-transition);
 }
 
 .author:hover,
@@ -388,6 +389,7 @@ body {
   color: var(--light-color);
   text-transform: uppercase;
   background-color: var(--main-color);
+  transition: var(--hover-transition);
   cursor: pointer;
 }
 
