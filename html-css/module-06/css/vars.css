@@ -9,4 +9,7 @@
   --icon-bg-color: #fce38a;
   --overlay-gradient: linear-gradient(to top, rgba(251, 226, 135,.9), rgba(243, 129, 129,.9));
   --hover-transition: all .2s linear;
+  --form-border-color: #e7e7e7;
+  --placeholder-color: #cccccc;
+  --light-color: #ffffff;
 }
