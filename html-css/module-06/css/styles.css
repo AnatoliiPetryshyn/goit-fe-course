@@ -17,8 +17,7 @@ img {
 }
 
 .container {
-  max-width: 1200px;
-  min-width: 320px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -26,6 +25,19 @@ body {
   font-family: var(--main-font);
   font-size: 15px;
   color: var(--text-color);
+}
+
+.header-logo,
+.service-list,
+.service-item__description,
+.team-list,
+.team-figure,
+.social-list,
+.team__position,
+.copy,
+.email,
+.form-btn{
+  margin: 0;
 }
 
 /* header */
@@ -44,14 +56,13 @@ body {
   font-family: var(--second-font);
   font-size: 30px;
   font-weight: 700;
-  margin: 0;
   color: var(--main-color);
 }
 
 .nav-list {
   display: flex;
   padding: 0;
-  margin: 0 0 3px 0;
+  margin-bottom: 3px;
 }
 
 .nav-list__item {
@@ -99,10 +110,12 @@ body {
 
 /* service */
 .section__pretitle {
+  display: block;
   font-family: var(--pretitle-font);
   font-size: 24px;
-  margin: 0 0 20px 0;
+  margin-bottom: 20px;
   color: var(--title-color);
+  text-transform: none;
   text-align: center;
 }
 
@@ -110,7 +123,7 @@ body {
   font-family: var(--second-font);
   font-size: 30px;
   font-weight: 700;
-  margin: 0 0 66px 0;
+  margin-bottom: 66px;
   text-transform: uppercase;
   text-align: center;
   color: var(--title-color);
@@ -130,16 +143,15 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
-  margin: 0;
 }
 
 .service-list__item {
   position: relative;
   top: 0;
   left: 0;
+  width: 380px;
   list-style: none;
-  flex: 0 1 380px;
-  padding: 0 0 0 80px;
+  padding-left: 80px;
 }
 
 .service-list__item::before {
@@ -151,48 +163,47 @@ body {
   width: 32px;
   height: 32px;
   background-repeat: no-repeat;
-  margin: 0 0 0 24px;
+  margin-left: 24px;
 }
 
-.service-list__item:nth-child(1)::before {
+.icon-clock::before {
   background-image: url(../img/icons/clock.png);
 }
 
-.service-list__item:nth-child(2)::before {
+.icon-graph::before {
   background-image: url(../img/icons/graph.png);
 }
 
-.service-list__item:nth-child(3)::before {
+.icon-pc::before {
   background-image: url(../img/icons/pc.png);
 }
 
-.service-list__item:nth-child(4)::before {
+.icon-book::before {
   background-image: url(../img/icons/book.png);
 }
 
-.service-list__item:nth-child(5)::before {
+.icon-home::before {
   background-image: url(../img/icons/home.png);
 }
 
-.service-list__item:nth-child(6)::before {
+.icon-square::before {
   background-image: url(../img/icons/square.png);
 }
 
 .service-list__item:not(:nth-last-child(-n+3)) {
-  margin: 0 0 80px 0;
+  margin-bottom: 80px;
 }
 
 .service-item__title {
   font-family: var(--second-font);
   font-size: 14px;
-  margin: 0 0 14px 0;
+  margin: 0 14px 0 0;
   color: var(--title-color);
   text-transform: uppercase;
 }
 
 .service-item__description {
   line-height: 24px;
-  margin: 0;
 }
 
 /* team */
@@ -209,7 +220,7 @@ body {
 }
 
 .team__title {
-  margin: 0 0 42px 0;
+  margin-bottom: 42px;
 }
 
 
@@ -217,10 +228,10 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin: 0;
 }
 
 .team-list__item {
+  width: 380px;
   list-style: none;
   cursor: pointer;
 }
@@ -238,7 +249,7 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  margin: 0 0 30px 0;
+  margin-bottom: 30px;
   background-color: var(--main-color);
 }
 
@@ -256,7 +267,6 @@ body {
   width: 100%;
   height: 100%;
   padding: 0;
-  margin: 0;
   background: var(--overlay-gradient);
   justify-content: center;
   align-items: center;
@@ -267,7 +277,7 @@ body {
 }
 
 .social-list__item:not(:last-child) {
-  margin: 0 1px 0 0;
+  margin-right: 1px;
 }
 
 .social-list__link {
@@ -312,7 +322,7 @@ body {
 .team__name {
   font-family: var(--second-font);
   font-size: 14px;
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
   color: var(--title-color);
   text-align: center;
   text-transform: uppercase;
@@ -324,7 +334,6 @@ body {
   font-style: italic;
   line-height: 24px;
   text-align: center;
-  margin: 0;
 }
 
 .footer {
@@ -337,7 +346,6 @@ body {
 .copy {
   font-family: var(--second-font);
   font-size: 14px; 
-  margin: 0;
   color: var(--title-color);
 }
 
@@ -365,7 +373,6 @@ body {
   border-right: none;
   color: var(--text-color);
   outline: none;
-  margin: 0;
 }
 
 .email::placeholder {
@@ -383,7 +390,6 @@ body {
   font-size: 14px;
   font-weight: 700;
   padding: 12px 32px;
-  margin: 0;
   border: none;
   outline: none;
   color: var(--light-color);
