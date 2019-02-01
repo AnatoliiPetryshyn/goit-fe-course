@@ -1,4 +1,4 @@
-@import "./vars.css";
+@import './vars.css';
 
 html {
   box-sizing: border-box;
@@ -36,7 +36,7 @@ body {
 .team__position,
 .copy,
 .email,
-.form-btn{
+.form-btn {
   margin: 0;
 }
 
@@ -81,7 +81,7 @@ body {
   color: var(--main-color);
   text-transform: uppercase;
   text-decoration: none;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
   position: relative;
   outline: none;
 }
@@ -91,7 +91,7 @@ body {
   top: 100%;
   left: 0;
   display: none;
-  content: "";
+  content: '';
   height: 3px;
   width: 100%;
   background-color: var(--accent-color);
@@ -106,7 +106,7 @@ body {
 .nav-list__link:hover::after,
 .nav-list__link:focus::after {
   display: block;
-} 
+}
 
 /* service */
 .section__pretitle {
@@ -131,12 +131,11 @@ body {
 
 .section__title::after {
   display: block;
-  content: "";
+  content: '';
   width: 60px;
   border-bottom: 3px solid var(--accent-color);
   margin: 40px auto 0;
 }
-
 
 .service-list {
   display: flex;
@@ -159,7 +158,7 @@ body {
   top: 0;
   left: 0;
   display: inline-block;
-  content: "";
+  content: '';
   width: 32px;
   height: 32px;
   background-image: url(../img/icons/icons-sprite.png);
@@ -191,7 +190,7 @@ body {
   background-position: -89px -84px;
 }
 
-.service-list__item:not(:nth-last-child(-n+3)) {
+.service-list__item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 80px;
 }
 
@@ -224,7 +223,6 @@ body {
   margin-bottom: 42px;
 }
 
-
 .team-list {
   display: flex;
   justify-content: space-between;
@@ -238,7 +236,7 @@ body {
 }
 
 .team-list__item:hover .team-img {
-  transform: translate(-10px,-10px);
+  transform: translate(-10px, -10px);
   transition: var(--hover-transition);
 }
 
@@ -285,8 +283,8 @@ body {
   display: block;
   padding: 14px;
   background-color: var(--icon-bg-color);
-  outline: none; 
-  transition: var(--hover-transition); 
+  outline: none;
+  transition: var(--hover-transition);
 }
 
 .social-list__link:hover,
@@ -294,12 +292,11 @@ body {
   background-color: var(--main-color);
 }
 
-
 .social-list__link::after {
   display: block;
   width: 26px;
   height: 26px;
-  content: "";
+  content: '';
   background-image: url(../img/icons/icons-sprite.png);
   background-repeat: no-repeat;
 }
@@ -329,7 +326,6 @@ body {
   text-transform: uppercase;
 }
 
-
 .team__position {
   font-weight: 300;
   font-style: italic;
@@ -346,7 +342,7 @@ body {
 
 .copy {
   font-family: var(--second-font);
-  font-size: 14px; 
+  font-size: 14px;
   color: var(--title-color);
 }
 
@@ -404,13 +400,10 @@ body {
   background-color: var(--accent-color);
 }
 
-
-
-
 /* visually-hidden helper */
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
   position: absolute;
 
   width: 1px;
