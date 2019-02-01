@@ -162,32 +162,33 @@ body {
   content: "";
   width: 32px;
   height: 32px;
+  background-image: url(../img/icons/icons-sprite.png);
   background-repeat: no-repeat;
   margin-left: 24px;
 }
 
 .icon-clock::before {
-  background-image: url(../img/icons/clock.png);
+  background-position: -47px -5px;
 }
 
 .icon-graph::before {
-  background-image: url(../img/icons/graph.png);
+  background-position: -47px -46px;
 }
 
 .icon-pc::before {
-  background-image: url(../img/icons/pc.png);
+  background-position: -125px -46px;
 }
 
 .icon-book::before {
-  background-image: url(../img/icons/book.png);
+  background-position: -5px -5px;
 }
 
 .icon-home::before {
-  background-image: url(../img/icons/home.png);
+  background-position: -112px -5px;
 }
 
 .icon-square::before {
-  background-image: url(../img/icons/square.png);
+  background-position: -89px -84px;
 }
 
 .service-list__item:not(:nth-last-child(-n+3)) {
@@ -299,24 +300,24 @@ body {
   width: 26px;
   height: 26px;
   content: "";
+  background-image: url(../img/icons/icons-sprite.png);
   background-repeat: no-repeat;
-  background-position: center;
 }
 
-.social-list__item:nth-child(1) .social-list__link::after {
-  background-image: url(../img/icons/facebook.png);
+.icon-facebook::after {
+  background-position: -82px -5px;
 }
 
-.social-list__item:nth-child(2) .social-list__link::after {
-  background-image: url(../img/icons/twitter.png);
+.icon-twitter::after {
+  background-position: -131px -81px;
 }
 
-.social-list__item:nth-child(3) .social-list__link::after {
-  background-image: url(../img/icons/pinterest.png);
+.icon-pinterest::after {
+  background-position: -5px -84px;
 }
 
-.social-list__item:nth-child(4) .social-list__link::after {
-  background-image: url(../img/icons/instagram.png);
+.icon-instagram::after {
+  background-position: -89px -46px;
 }
 
 .team__name {
