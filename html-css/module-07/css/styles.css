@@ -22,10 +22,17 @@ body {
   margin: 0 auto;
 }
 
+.header-logo,
+.nav-list {
+  margin: 0;
+}
+
 /* header */
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 36px 0 120px 0;
 }
 
 .header-logo__link {
@@ -37,5 +44,30 @@ body {
   font-size: 26px;
   line-height: 41px;
   font-style: italic;
+  color: var(--accent-color);
+}
+
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 480px;
+}
+
+.nav-list__item {
+  list-style: none;
+}
+
+.nav-list__link {
+  font-family: var(--nav-font);
+  font-size: 14px;
+  line-height: 41px;
+  color: var(--title-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-list__link:hover,
+.nav-list__link:focus {
   color: var(--accent-color);
 }
