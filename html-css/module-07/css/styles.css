@@ -1,5 +1,5 @@
-@import "var.css";
-@import "fonts.css";
+@import 'var.css';
+@import 'fonts.css';
 
 html {
   box-sizing: border-box;
@@ -11,7 +11,31 @@ html {
   box-sizing: inherit;
 }
 
-.container { 
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.container {
   width: 940px;
   margin: 0 auto;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo__link {
+  text-decoration: none;
+}
+
+.header-logo {
+  font-family: var(--logo-font);
+  font-size: 26px;
+  line-height: 41px;
+  font-style: italic;
+  color: var(--accent-color);
 }
