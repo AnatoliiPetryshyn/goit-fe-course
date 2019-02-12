@@ -1,0 +1,44 @@
+/* zcool-xiaowei-regular - latin */
+@font-face {
+  font-family: 'zcoolXiaoweiRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/zcoolXiaoWei/zcoolXiaoweiRegular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/zcoolXiaoWei/zcoolXiaoweiRegular.woff') format('woff');    /* Modern Browsers */
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: 'robotoSlabRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/RobotoSlab/robotoSlabRegular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/RobotoSlab/robotoSlabRegular.woff') format('woff'); /* Modern Browsers */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'montserratRegualr';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Montserrat/montserratRegular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Montserrat/montserratRegular.woff') format('woff'); /* Modern Browsers */
+}
+
+/* montserrat-bold - latin */
+@font-face {
+  font-family: 'montserratBold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Montserrat/montserratBold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Montserrat/montserratBold.woff') format('woff'); /* Modern Browsers */
+}
+
+/* leckerli-one-regular - latin */
+@font-face {
+  font-family: 'leckerliOne';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/leckerli-one/leckerliOneRegular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/leckerli-one/leckerliOneRegular.woff') format('woff'); /* Modern Browsers */
+}
