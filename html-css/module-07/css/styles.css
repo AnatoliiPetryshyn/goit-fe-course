@@ -153,3 +153,60 @@ body {
   line-height: 17px;
   letter-spacing: -0.025em;
 }
+
+/* contact */
+.contact-wrapper {
+  background-color: var(--title-color);
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact {
+  padding: 106px 0 114px;
+}
+
+
+.contact-title {
+  line-height: 48px;
+  color: var(--light-color);
+  margin-bottom: 12px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input__item,
+.form-textarea {
+  width: 455px;
+  font-family: var(--title-font);
+  font-size: 14px;
+  color: var(--placeholder-color);
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 12px 20px;
+}
+
+.form-input__item:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.form-input__item::placeholder,
+.form-textarea::placeholder {
+  letter-spacing: -0.025em;
+  color: var(--placeholder-color);
+  text-transform: uppercase;
+}
+
+.form-button {
+
+}
+
