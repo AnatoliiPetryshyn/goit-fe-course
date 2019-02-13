@@ -23,8 +23,31 @@ body {
 }
 
 .header-logo,
-.nav-list {
+.nav-list,
+.section-title,
+.section-title__description,
+.services-list,
+.services-item__title,
+.services-item__description {
   margin: 0;
+}
+
+.section-title {
+  font-family: var(--title-font);
+  font-size: 40px;
+  line-height: 75px;
+  letter-spacing: -0.025em;
+  color: var(--title-color);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section-title__description {
+  font-family: var(--title-desc-font);
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 70px;
 }
 
 /* header */
@@ -32,7 +55,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 36px 0 120px 0;
+  padding: 36px 0 102px 0;
 }
 
 .header-logo__link {
@@ -43,6 +66,7 @@ body {
   font-family: var(--logo-font);
   font-size: 26px;
   line-height: 41px;
+  letter-spacing: 0.05em;
   font-style: italic;
   color: var(--accent-color);
 }
@@ -52,6 +76,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 480px;
+  padding: 0;
 }
 
 .nav-list__item {
@@ -70,4 +95,61 @@ body {
 .nav-list__link:hover,
 .nav-list__link:focus {
   color: var(--accent-color);
+}
+
+/* services */
+.services {
+  padding-bottom: 112px;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.services-list__item {
+  list-style: none;
+  width: 280px;
+  text-align: center;
+}
+
+.services-item__title {
+  font-family: var(--title-font);
+  font-size: 18px;
+  line-height: 75px;
+  letter-spacing: -0.025em;
+  color: var(--title-color);
+}
+
+.services-item__title::before {
+  display: block;
+  width: 60px;
+  height: 60px;
+  content: '';
+  background-repeat: no-repeat;
+  border: 3px solid var(--accent-color);
+  border-radius: 50%;
+  margin: 0 auto;
+  fill: var(--accent-color);
+}
+
+.icon-basket::before {
+  background-image: url(../img/icons/icon-basket.svg);
+  background-position: 7px 7px;
+}
+
+.icon-laptop::before {
+  background-image: url(../img/icons/icon-laptop.svg);
+  background-position: 6px 9px;
+}
+
+.icon-lock::before {
+  background-image: url(../img/icons/icon-lock.svg);
+  background-position: 12px 6px;
+}
+
+.services-item__description {
+  line-height: 17px;
+  letter-spacing: -0.025em;
 }
