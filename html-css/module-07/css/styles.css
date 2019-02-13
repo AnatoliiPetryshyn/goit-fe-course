@@ -47,7 +47,7 @@ body {
   font-size: 16px;
   font-style: italic;
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 78px;
 }
 
 /* header */
@@ -70,7 +70,6 @@ body {
   font-style: italic;
   color: var(--accent-color);
 }
-
 
 .nav-list {
   display: flex;
@@ -166,11 +165,10 @@ body {
   padding: 106px 0 114px;
 }
 
-
 .contact-title {
   line-height: 48px;
   color: var(--light-color);
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .input-wrapper {
@@ -186,13 +184,32 @@ body {
 
 .form-input__item,
 .form-textarea {
-  width: 455px;
   font-family: var(--title-font);
   font-size: 14px;
   color: var(--placeholder-color);
   border: 1px solid #cccccc;
-  border-radius: 5px;
   padding: 12px 20px;
+  color: var(--title-color);
+  outline: none;
+}
+
+.form-input__item {
+  width: 455px;
+  border-radius: 2px;
+}
+
+.form-textarea {
+  border-radius: 5px;
+}
+
+.form-input__item:valid,
+.form-textarea:valid {
+  border: 2px solid #008000;
+}
+
+.form-input__item:invalid,
+.form-textarea:invalid {
+  border: 2px solid #ff0000;
 }
 
 .form-input__item:not(:last-child) {
@@ -207,6 +224,19 @@ body {
 }
 
 .form-button {
-
+  display: block;
+  font-family: var(--title-font);
+  font-size: 18px;
+  color: var(--light-color);
+  border: none;
+  border-radius: 3px;
+  background-color: var(--accent-color);
+  padding: 24px 48px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
+.form-button:hover {
+  background-color: #ffe17b;
+}
