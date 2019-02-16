@@ -76,7 +76,6 @@ body {
 .nav-list {
   display: flex;
   justify-content: space-between;
-  /* width: 480px; */
   padding: 0;
 }
 
@@ -212,12 +211,12 @@ body {
 
 .form-input__item:focus:valid,
 .form-textarea:focus:valid {
-  border: 2px solid #008000;
+  outline: 2px solid #008000;
 }
 
 .form-input__item:focus:invalid,
 .form-textarea:focus:invalid {
-  border: 2px solid #ff0000;
+  outline: 2px solid #ff0000;
 }
 
 .form-input__item:not(:last-child) {
