@@ -1,0 +1,112 @@
+.partner {
+  padding: 6.8rem 0 5.8rem 0;
+  text-align: center;
+}
+
+.partner__title {
+  font-family: var(--main-font);
+  font-size: 2.2rem;
+  color: var(--title-color-dark);
+  margin-bottom: 1.8rem;
+}
+
+.partner__list-item {
+  width: 21.8rem;
+  margin: 0 auto;
+  margin-bottom: 2.8rem;
+  
+}
+
+.partner__card {
+  width: 21.8rem;
+  margin: 0 auto;
+}
+
+.partner__img-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 12rem;
+  margin: 0 auto 2rem;
+}
+
+.partner__img {
+  border-radius: 50%;
+}
+
+.partner__icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border: 4px solid var(--light-color);
+  border-radius: 50%;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--light-color);
+}
+
+.icon-tv {
+  background-color: var(--button-color);
+}
+
+.icon-coffee {
+  background-color: var(--icon-bg-color1);
+}
+
+.icon-proof {
+  background-color: var(--icon-bg-color2);
+}
+
+.icon-airplane {
+  background-color: var(--icon-bg-color3);
+}
+
+.partner__card-title {
+  font-family: var(--main-font);
+  font-size: 1.4rem;
+  color: var(--title-color-dark);
+  margin-bottom: 1.6rem;
+}
+
+.partner__card-text {
+  font-family: var(--secondary-font);
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+
+.partner__button {
+  background-color: var(--light-color);
+  color: var(--button-color);
+}
+
+
+@media screen and (min-width: 768px) {
+  .partner__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .partner__list-item {
+    width: 50%;
+  }
+
+  .partner__button {
+    width: 19.6rem;
+  }
+
+ 
+}
+
+@media screen and (min-width: 1440px) {
+  .partner__list-item {
+    width: 25%;
+  }
+}
