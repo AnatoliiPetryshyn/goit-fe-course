@@ -31,22 +31,18 @@ li {
   list-style: none;
 }
 
-.wrapper {
-  min-width: 32rem;
-}
-
 .container {
   width: 29.2rem;
   margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 748px) {
   .container {
     width: 66rem;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 940px) {
   .container {
     width: 94rem;
   }

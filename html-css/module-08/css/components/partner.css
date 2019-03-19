@@ -88,7 +88,7 @@
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 748px) {
   .partner__list {
     display: flex;
     flex-wrap: wrap;
@@ -101,11 +101,10 @@
   .partner__button {
     width: 19.6rem;
   }
-
  
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 940px) {
   .partner__list-item {
     width: 25%;
   }

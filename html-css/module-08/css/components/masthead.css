@@ -83,7 +83,7 @@
   color: var(--button-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 748px) {
   .masthead {
     padding: 4.6rem 0 23.4rem;
   }
