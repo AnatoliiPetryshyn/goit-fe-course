@@ -30,43 +30,45 @@
   margin: 0 auto 2rem;
 }
 
-.partner__img {
-  border-radius: 50%;
-}
-
-.partner__icon {
+.partner__img-wrapper::after {
   position: absolute;
   right: 0;
   bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  content: "";
   width: 4rem;
   height: 4rem;
   border: 4px solid var(--light-color);
   border-radius: 50%;
+  background-repeat: no-repeat;
+  
 }
 
-.icon {
-  width: 2rem;
-  height: 2rem;
-  fill: var(--light-color);
+.partner__img {
+  border-radius: 50%;
 }
 
-.icon-tv {
+.icon-tv::after {
   background-color: var(--button-color);
+  background-image: url(../../img/icons/sprite-icons.svg#icon-tv-view);
+  background-position: 6px 5px;
 }
 
-.icon-coffee {
+.icon-coffee::after {
   background-color: var(--icon-bg-color1);
+  background-image: url(../../img/icons/sprite-icons.svg#icon-coffee-view);
+  background-position: 6px 4px;
 }
 
-.icon-proof {
+.icon-proof::after {
   background-color: var(--icon-bg-color2);
+  background-image: url(../../img/icons/sprite-icons.svg#icon-proof-view);
+  background-position: 7px 5px;
 }
 
-.icon-airplane {
+.icon-airplane::after {
   background-color: var(--icon-bg-color3);
+  background-image: url(../../img/icons/sprite-icons.svg#icon-airplane-view);
+  background-position: 3px 6px;
 }
 
 .partner__card-title {
