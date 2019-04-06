@@ -17,7 +17,8 @@ do {
   }
 
   if (userPassword === null) {
-    console.log('Отменено пользователем!');
+    alert('Отменено пользователем!');
+    isPassed = true;
   } else {
     if (isPassed) {
       alert('Добро пожаловать!');
