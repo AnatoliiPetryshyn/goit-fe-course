@@ -1,0 +1,12 @@
+:root {
+  --main-font: 'MontserratBold', sans-serif;
+  --secondary-font: 'RobotoLight', sans-serif;
+  --light-color: #ffffff;
+  --title-color-dark: #333333;
+  --text-color: #666666;
+  --button-color: #ff4e50;
+  --icon-bg-color1: #1cd7ad;
+  --icon-bg-color2: #ffa507;
+  --icon-bg-color3: #4e73db;
+  --overlay-bg-color: rgba(0, 0, 0, .3);
+}

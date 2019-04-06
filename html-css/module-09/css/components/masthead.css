@@ -1,0 +1,133 @@
+.masthead-wrapper {
+  background-image: url(../../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.masthead__overlay {
+  background-color: var(--overlay-bg-color);
+}
+
+.masthead {
+  padding: 2rem 0 13.8rem;
+}
+
+.masthead__header {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3.4rem;
+}
+
+.masthead__logo {
+  font-family: var(--main-font);
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  color: var(--light-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+.masthead__logo:hover {
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+.masthead__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 11.8rem;
+}
+
+.masthead__list-link {
+  display: block;
+  font-family: var(--main-font);
+  font-size: 1.4rem;
+  color: var(--light-color);
+  padding: 1rem 1.8rem;
+  text-decoration: none;
+}
+
+.masthead__list-link:hover,
+.masthead__list-link:focus {
+  border: 2px solid var(--light-color);
+  border-radius: 2rem;
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+.masthead__title {
+  font-family: var(--main-font);
+  color: var(--light-color);
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+
+.masthead__title-span {
+  display: block;
+}
+
+.masthead__text {
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: var(--light-color);
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+
+.masthead__text-span {
+  display: block;
+}
+
+.masthead__button {
+  background-color: var(--button-color);
+  color: var(--light-color);
+  margin: 0 auto;
+}
+
+.masthead__button:hover {
+  background-color: var(--light-color);
+  color: var(--button-color);
+}
+
+@media screen and (min-width: 768px) {
+  .masthead {
+    padding: 4.6rem 0 23.4rem;
+  }
+
+  .masthead__header {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15.4rem;
+  }
+
+  .masthead__logo {
+    text-align: left;
+  }
+
+  .masthead__list {
+    margin: 0;
+    justify-content: flex-end;
+  }
+
+  .masthead__title {
+    font-size: 5.2rem;
+    margin: 0 auto;
+    margin-bottom: 3.4rem;
+  }
+
+  .masthead__text {
+    font-size: 2.4rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .masthead__text-span {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,16 @@
+.button {
+  display: block;
+  font-family: var(--main-font);
+  font-size: 1.4rem;
+  border: 2px solid var(--button-color);
+  border-radius: 2rem;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:hover:focus {
+  background-color: var(--button-color);
+  color: var(--light-color);
+  transition: 0.3s;
+}
