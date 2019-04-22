@@ -1,0 +1,35 @@
+.hero-section {
+  text-align: center;
+}
+.hero-section__pretitle {
+  display: block;
+  font-family: var(--pretitle-font);
+  font-size: 7.2rem;
+  text-transform: none;
+}
+
+.hero-section__title {
+  font-family: 'MontserratBold', sans-serif;
+  font-size: 15rem;
+  line-height: 14rem;
+  margin-bottom: 12rem;
+  color: var(--light-color);
+  text-transform: uppercase;
+}
+
+.hero__link {
+  display: inline-block;
+  text-align: center;
+  font-family: 'MontserratBold', sans-serif;
+  font-size: 1.4rem;
+  padding: 1.4rem 3.2rem;
+  border: 3px solid var(--light-color);
+  color: var(--light-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.hero__link:hover,
+.hero__link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}

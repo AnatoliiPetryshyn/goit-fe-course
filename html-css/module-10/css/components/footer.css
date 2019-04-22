@@ -1,0 +1,105 @@
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1rem 0 1.2rem;
+}
+
+.copy {
+  font-family: var(--second-font);
+  font-size: 1.4rem;
+  color: var(--title-color);
+}
+
+.author {
+  text-decoration: none;
+  outline: none;
+  color: var(--line-color);
+  -webkit-transition: var(--hover-transition);
+  -o-transition: var(--hover-transition);
+  transition: var(--hover-transition);
+}
+
+.author:hover,
+.author:focus {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 38rem;
+}
+.email {
+  width: 23rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--form-border-color);
+  border-right: none;
+  color: var(--text-color);
+  outline: none;
+}
+
+.email::-webkit-input-placeholder {
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 2.4rem;
+  color: var(--placeholder-color);
+}
+
+.email:-ms-input-placeholder {
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 2.4rem;
+  color: var(--placeholder-color);
+}
+
+.email::-ms-input-placeholder {
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 2.4rem;
+  color: var(--placeholder-color);
+}
+
+.email::placeholder {
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 2.4rem;
+  color: var(--placeholder-color);
+}
+
+.form-btn {
+  width: 15rem;
+  font-family: var(--second-font);
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1.2rem 3.2rem;
+  border: none;
+  outline: none;
+  color: var(--light-color);
+  text-transform: uppercase;
+  background-color: var(--main-color);
+  -webkit-transition: var(--hover-transition);
+  -o-transition: var(--hover-transition);
+  transition: var(--hover-transition);
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background-color: var(--line-color);
+}
