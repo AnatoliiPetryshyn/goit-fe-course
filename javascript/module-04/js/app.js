@@ -23,8 +23,7 @@ const notepad = {
      * Возвращает: заметку с совпавшим полем id или undefined если ничего не найдено
      */
     for (const item of this.notes) {
-      let isIncludeId = item.id === id;
-      if (isIncludeId) {
+      if (item.id === id) {
         return item;
       }
     }
@@ -102,8 +101,8 @@ const notepad = {
     const filteredNotesByQuery = [];
     for (let note of this.notes) {
       const isIncludeQuery =
-        note.title.toLowerCase().includes(query) ||
-        note.body.toLowerCase().includes(query);
+        note.title.toLowerCase().includes(query.toLowerCase()) ||
+        note.body.toLowerCase().includes(query.toLowerCase());
       if (isIncludeQuery) {
         filteredNotesByQuery.push(note);
       }
