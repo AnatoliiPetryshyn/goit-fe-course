@@ -1,0 +1,67 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 1.2rem;
+}
+
+.copy {
+  font-family: $second-font;
+  font-size: 1.4rem;
+  color: $title-color;
+}
+
+.author {
+  text-decoration: none;
+  outline: none;
+  color: $line-color;
+  transition: $hover-transition;
+
+  &:hover,
+  &:focus {
+    color: $main-color;
+    text-decoration: underline;
+  }
+}
+
+.footer__form {
+  display: flex;
+  width: 38rem;
+}
+
+.email {
+  width: 23rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid $form-border-color;
+  border-right: none;
+  color: $text-color;
+  outline: none;
+}
+
+.email::placeholder {
+  font-family: $main-font;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 2.4rem;
+  color: $placeholder-color;
+}
+
+.form-btn {
+  width: 15rem;
+  font-family: $second-font;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1.2rem 3.2rem;
+  border: none;
+  outline: none;
+  color: $light-color;
+  text-transform: uppercase;
+  background-color: $main-color;
+  transition: $hover-transition;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $line-color;
+  }
+}

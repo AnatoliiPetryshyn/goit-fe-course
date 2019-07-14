@@ -1,0 +1,42 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: $main-font;
+  font-size: 1.5rem;
+  color: $text-color;
+}
+
+.header-logo,
+.service-list,
+.service-item__description,
+.team-list,
+.team-figure,
+.social-list,
+.team__position,
+.copy,
+.email,
+.form-btn,
+h1,
+h2 {
+  margin: 0;
+}

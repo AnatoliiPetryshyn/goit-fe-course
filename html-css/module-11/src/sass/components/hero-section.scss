@@ -1,0 +1,37 @@
+.hero-section {
+  text-align: center;
+}
+
+.hero-section__pretitle {
+  display: block;
+  font-family: $pretitle-font;
+  font-size: 7.2rem;
+  text-transform: none;
+}
+
+.hero-section__title {
+  font-family: 'MontserratBold', sans-serif;
+  font-size: 15rem;
+  line-height: 14rem;
+  margin-bottom: 12rem;
+  color: $light-color;
+  text-transform: uppercase;
+}
+
+.hero-section__link {
+  display: inline-block;
+  text-align: center;
+  font-family: 'MontserratBold', sans-serif;
+  font-size: 1.4rem;
+  padding: 1.4rem 3.2rem;
+  border: 3px solid $light-color;
+  color: $light-color;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}

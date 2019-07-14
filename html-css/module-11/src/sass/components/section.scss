@@ -1,0 +1,34 @@
+.section__pretitle {
+  display: block;
+  font-family: $pretitle-font;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: $title-color;
+  text-transform: none;
+  text-align: center;
+}
+
+.section__title {
+  font-family: $title-font;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 6.6rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: $title-color;
+
+  &::after {
+    display: block;
+    content: '';
+    width: 6rem;
+    border-bottom: 3px solid $line-color;
+    margin: 4rem auto 0;
+  }
+}
+
+.section__description {
+  width: 98rem;
+  line-height: 2.4rem;
+  text-align: center;
+  margin: 0 auto 9rem;
+}
